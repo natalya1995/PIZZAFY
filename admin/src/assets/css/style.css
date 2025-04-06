@@ -16,6 +16,7 @@ a {
     --success: #00DFA2;
     --warning: #ffc009;
     --danger: #FF0060;
+    --info:#8c00ff;
 }
 body {
     background-color: var(--light);
@@ -129,6 +130,10 @@ button {
 }
 .bg-success {
     background-color: var(--success);
+    color: var(--light);
+}
+.bg-info {
+    background-color: var(--info);
     color: var(--light);
 }
 .btn {

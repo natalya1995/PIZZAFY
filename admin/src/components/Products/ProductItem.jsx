@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { PRODUCT_UPDATE, PRODUCT_DELETE } from "../../utils/consts";
+import { PRODUCT_UPDATE, PRODUCT_DELETE, PRODUCT_READ } from "../../utils/consts";
 
 function ProductItem({ product, index }) {
     return (
@@ -18,6 +18,12 @@ function ProductItem({ product, index }) {
                     className="btn bg-danger"
                 >
                     Удалить
+                </Link>
+                <Link
+                    to={PRODUCT_READ.replace(":id", product.id)}
+                    className="btn bg-info"
+                >
+                    Подробнее...
                 </Link>
             </td>
         </tr>

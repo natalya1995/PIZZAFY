@@ -8,6 +8,7 @@ PRODUCTS,
 PRODUCT_CREATE,
 PRODUCT_DELETE,
 PRODUCT_UPDATE,
+PRODUCT_READ,
 
 
 }from "./consts";
@@ -21,6 +22,7 @@ import Products from "../pages/Products/Products";
 import CreateProduct from "../pages/Products/CreateProduct";
 import DeleteProduct from "../pages/Products/DeleteProduct";
 import UpdateProduct from "../pages/Products/UpdateProduct";
+import ProductDetail from "../pages/Products/ProductDetail";
 
 
 export const routes = [
@@ -60,5 +62,9 @@ export const routes = [
     path:PRODUCT_UPDATE,
     element:UpdateProduct,
   },
+  {
+    path: PRODUCT_READ,
+    element: ProductDetail,
+  }
 
 ];
